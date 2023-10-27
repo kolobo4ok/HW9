@@ -1,6 +1,6 @@
 //Напишіть свій клас  MyArrayList як аналог класу ArrayList. Можна використовувати 1 масив для зберігання даних.
 // HomeWork module 9 lessons 1. by Abramian
-package arrayList;
+package homework9lessons1;
 
 public class MyArrayList {
     private Object[] array;
@@ -39,7 +39,7 @@ public class MyArrayList {
             throw new ArrayIndexOutOfBoundsException("You delete an index " + index + ".\nThis index don't have, please " +
                     "enter index range from 0 to " + array.length + ".\n");
         } else {
-            System.arraycopy(array, 0, array, index, size - 1);
+            System.arraycopy(array, 0, array, index, size - index - 1);
             array[index] = null;
         }
     }

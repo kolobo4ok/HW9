@@ -1,6 +1,6 @@
-package hashMap;
+package homework9lessons5;
 
-public class Main {
+public class MyHashMapTest {
     public static void main(String[] args) {
         MyHashMap map = new MyHashMap();
         map.put("A", 1);

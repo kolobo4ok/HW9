@@ -13,22 +13,12 @@
     get(int index) повертає елемент за індексом
 */
 
-package linkedList;
+package homework9lessons2;
 
 public class MyLinkedList {
     private Node head; // Початок списку
     private Node tail; // Кінець списку
     private int size;  // Розмір списку
-
-    private class Node {        //inner class представляє елемент списку
-        Object data;
-        Node next;
-        Node prev;
-
-        Node(Object data) {
-            this.data = data;
-        }
-    }
 
     public void add(Object value) {     // add(Object value) додає елемент в кінець
         Node newNode = new Node(value);
@@ -99,6 +89,16 @@ public class MyLinkedList {
                 current = current.prev;
             }
             return current;
+        }
+    }
+
+    private class Node {        //inner class представляє елемент списку
+        Object data;
+        Node next;
+        Node prev;
+
+        Node(Object data) {
+            this.data = data;
         }
     }
 }

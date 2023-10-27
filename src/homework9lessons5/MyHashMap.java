@@ -13,7 +13,7 @@
     get(Object key) повертає значення (Object value) за ключем
 */
 
-package hashMap;
+package homework9lessons5;
 
 public class MyHashMap {
     private Node[] table;
@@ -22,17 +22,6 @@ public class MyHashMap {
 
     public MyHashMap() {
         table = new Node[capacity];
-    }
-
-    private class Node {
-        Object key;
-        Object value;
-        Node next;
-
-        Node(Object key, Object value) {
-            this.key = key;
-            this.value = value;
-        }
     }
 
     private int hash(Object key) {
@@ -101,5 +90,16 @@ public class MyHashMap {
             current = current.next;
         }
         return null; // Ключ не знайдено
+    }
+
+    private class Node {
+        Object key;
+        Object value;
+        Node next;
+
+        Node(Object key, Object value) {
+            this.key = key;
+            this.value = value;
+        }
     }
 }

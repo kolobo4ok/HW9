@@ -12,20 +12,11 @@
     peek() повертає перший елемент стеку
     pop() повертає перший елемент стеку та видаляє його з колекції
  */
-package stack;
+package homework9lessons4;
 
 public class MyStack {
     private Node top; // Вершина стеку
     private int size; // Розмір стеку
-
-    private class Node {
-        Object data;
-        Node next;
-
-        Node(Object data) {
-            this.data = data;
-        }
-    }
 
     public void push(Object value) {        //  push(Object value) додає елемент в кінець
         Node newNode = new Node(value);
@@ -78,5 +69,14 @@ public class MyStack {
 
     public boolean isEmpty() {
         return size == 0;
+    }
+
+    private class Node {
+        Object data;
+        Node next;
+
+        Node(Object data) {
+            this.data = data;
+        }
     }
 }

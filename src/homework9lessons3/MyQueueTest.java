@@ -1,6 +1,6 @@
-package queue;
+package homework9lessons3;
 
-public class Main {
+public class MyQueueTest {
     public static void main(String[] args) {
 
 

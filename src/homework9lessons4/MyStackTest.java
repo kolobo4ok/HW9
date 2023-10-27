@@ -1,6 +1,6 @@
-package stack;
+package homework9lessons4;
 
-public class Main {
+public class MyStackTest {
     public static void main(String[] args) {
         MyStack myStack = new MyStack();
         myStack.push("A");

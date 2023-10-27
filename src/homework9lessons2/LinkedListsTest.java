@@ -1,6 +1,6 @@
-package linkedList;
+package homework9lessons2;
 
-public class Main {
+public class LinkedListsTest {
     public static void main(String[] args) {
         MyLinkedList myList = new MyLinkedList();
         myList.add("A");

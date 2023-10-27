@@ -10,21 +10,12 @@
     peek() повертає перший елемент з черги
     poll() повертає перший елемент з черги і видаляє його з колекції
 */
-package queue;
+package homework9lessons3;
 
 public class MyQueue {
     private Node front; // Початок черги
     private Node rear;  // Кінець черги
     private int size;   // Розмір черги
-
-    private static class Node {    //inner class
-        Object data;
-        Node next;
-
-        Node(Object data) {
-            this.data = data;
-        }
-    }
 
     public void add(Object value) {     //  add(Object value) додає елемент в кінець
         Node newNode = new Node(value);
@@ -67,5 +58,14 @@ public class MyQueue {
 
     private boolean isEmpty() {
         return size == 0;
+    }
+
+    private static class Node {    //inner class
+        Object data;
+        Node next;
+
+        Node(Object data) {
+            this.data = data;
+        }
     }
 }

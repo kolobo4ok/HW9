@@ -1,6 +1,6 @@
-package arrayList;
+package homework9lessons1;
 
-public class Main {
+public class ArraysListTest {
     public static void main(String[] args) {
         MyArrayList myArrayList = new MyArrayList();
         myArrayList.add(25);        //add element value 25 index 0
